@@ -10,4 +10,6 @@ class Item < ApplicationRecord
   belongs_to :user
   has_many :community_items
   has_many :communities, through: :community_items
+
+  has_one_attached :photo
 end
